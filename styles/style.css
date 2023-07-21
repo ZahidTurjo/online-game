@@ -208,6 +208,35 @@ font-weight: 700;
     width: 100%;
     
 }
+.game-container{
+    background-image: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 30px;
+}
+.games button{
+    border-radius: 50px;
+background-color: #FFF;
+border: 5px solid transparent;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.games{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    row-gap: 20px;
+    gap: 20px;
+   
+    
+}
+.games button:hover{
+    border: 5px solid #F948B2;
+    cursor: pointer;
+
+}
 
 
 
@@ -257,6 +286,11 @@ font-weight: 700;
 .play-img img{
     margin-top: 20px;
 }
+.games{
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+    row-gap: 10px;
+}
 
 }
 
@@ -292,6 +326,9 @@ font-weight: 700;
 }
 .play-img img{
     margin-top: 20px;
+}
+.games{
+    grid-template-columns: repeat(3,1fr)
 }
 
     
