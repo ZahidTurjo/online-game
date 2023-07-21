@@ -29,6 +29,7 @@ nav{
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    max-width: 1400px;
 
 }
 .nav-items a{
@@ -49,6 +50,72 @@ margin-left: 35px;
     background-color: rgba(11, 2, 35, 0.10);
     padding: 20px 24px;
 }
+/* end navbar */
+/* banner section start */
+.banner-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+max-width: 1400px;
+margin: 0 auto;
+}
+.banner-content{
+    padding-left:60px;
+    
+}
+.banner-content h1{
+    background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 5.5rem;
+font-weight:800 ;
+margin-bottom: 40px;
+}
+.banner-content h3{
+    font-size: 3rem;
+    font-weight: 600;
+color: #0B0223;
+margin-bottom:20px;
+}
+.banner-content p{
+    color: #534C64;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.btn-one{
+    color: #FFF;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+font-size: 1.2rem;
+padding: 20px 40px;
+font-weight: 600;
+border: none;
+margin-top: 20px;
+}
+.btn-two{
+    color: #FFF;
+    border-radius: 48px;
+    background: #4EC5F7;
+font-size: 1.2rem;
+padding: 20px 40px;
+font-weight: 600;
+border: none;
+margin-left: 15px;
+margin-top: 20px;
+}
+
+
+
+.banner-img img{
+    width: 100%;
+    height:100%;
+    
+}
+/* end banner section */
+
 
 
 
@@ -60,6 +127,7 @@ margin-left: 35px;
 @media screen and (max-width:576px) {
     nav,
 .nav-items
+
     {
         flex-direction: column;
     }
@@ -68,6 +136,11 @@ margin-left: 35px;
         gap:50px;
         margin-top:50px;
     }
+    .banner-container{
+        flex-direction: column;
+        margin: 10px;
+    }
+    
 }
 
 
@@ -75,6 +148,9 @@ margin-left: 35px;
     nav{
         flex-direction: column;
         gap:40px;
+    }
+    .btn-two{
+        margin-right: -15px;
     }
     
 }
